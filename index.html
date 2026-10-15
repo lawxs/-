@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -89,10 +90,20 @@
       transform: scale(1.02);
     }
 
-    .youtube { border-color: #ff4d4d; box-shadow: 0 0 18px rgba(255,77,77,.35); }
-    .livepix { border-color: #b983ff; box-shadow: 0 0 18px rgba(185,131,255,.35); }
-    .discord { border-color: #5865f2; box-shadow: 0 0 18px rgba(88,101,242,.35); }
-    .whatsapp { border-color: #25d366; box-shadow: 0 0 18px rgba(37,211,102,.35); }
+    .youtube {
+      border-color: #ff4d4d;
+      box-shadow: 0 0 18px rgba(255,77,77,.35);
+    }
+
+    .livepix {
+      border-color: #b983ff;
+      box-shadow: 0 0 18px rgba(185,131,255,.35);
+    }
+
+    .discord {
+      border-color: #5865f2;
+      box-shadow: 0 0 18px rgba(88,101,242,.35);
+    }
 
     footer {
       margin-top: 28px;
@@ -113,27 +124,46 @@
       Para links funcionarem corretamente, abra pelo navegador externo (⋮)
     </div>
 
-    <a class="btn youtube" href="https://youtube.com/@leigames" target="_blank">
-      <i class="fab fa-youtube"></i> YouTube
+    <!-- YOUTUBE -->
+    <a
+      class="btn youtube"
+      href="https://youtube.com/@leigames?si=DF3zj0p2MWCETuYk"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fab fa-youtube"></i>
+      YouTube
     </a>
 
-    <a class="btn livepix" href="https://livepix.gg/michelx" target="_blank">
-      <i class="fas fa-heart"></i> LivePix · Apoiar
+    <!-- LIVEPIX -->
+    <a
+      class="btn livepix"
+      href="https://livepix.gg/michelx"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fas fa-heart"></i>
+      LivePix · Apoiar
     </a>
 
-    <a class="btn discord" href="https://discord.gg/zqtGMmQRN" target="_blank">
-      <i class="fab fa-discord"></i> Discord · Comunidade
-    </a>
-
-    <a class="btn whatsapp" href="https://chat.whatsapp.com/GVaxirEIhMCBnEE4h60jXo" target="_blank">
-      <i class="fab fa-whatsapp"></i> WhatsApp · Entrar no Grupo
+    <!-- DISCORD -->
+    <a
+      class="btn discord"
+      href="https://discord.gg/HttpBj2qx"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fab fa-discord"></i>
+      Discord · Comunidade
     </a>
 
     <footer>© Lei Games</footer>
+
   </div>
 
   <script>
     const ua = navigator.userAgent.toLowerCase();
+
     const isWebView =
       ua.includes("wv") ||
       ua.includes("webview") ||
