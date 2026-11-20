@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+  <title>Monograma LAW</title>
+  <rect width="72" height="72" rx="10" fill="#101012"/>
+  <!-- O pé do L encontra o A. A haste direita do A inicia o W. -->
+  <path transform="translate(2 16.5)" fill="#f5f4f2" fill-rule="evenodd"
+        d="M12 3h6L8.7 31H19L32.5 3H38l2.5 23.2 5.7-10.9H50L51.5 26l8.7-23H66L53.2 36h-5l-1.4-11-5.4 11h-4.5l-.75-7H26l-3.3 7H1z
+           M28.1 23.9h7.5l-1.1-11.7z"/>
+</svg>
