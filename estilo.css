@@ -121,7 +121,7 @@ h1, h2, p { margin: 0; }
   background: #19191b;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.6rem), calc(100% - 1.6rem) 100%, 0 100%);
 }
-.capa__arte, .capa__arte img, .capa__corte, .capa::after {
+.capa__arte, .capa__arte img {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -131,40 +131,6 @@ h1, h2, p { margin: 0; }
   display: block;
   object-fit: cover;
   object-position: 50% 28%;
-  transform: scale(1.085);
-  transform-origin: 46% 30%;
-}
-.capa__corte {
-  background: var(--fundo);
-  clip-path: polygon(94% 0, 96% 0, 83% 100%, 81% 100%);
-}
-.capa::after {
-  content: "";
-  pointer-events: none;
-  background: linear-gradient(0deg, rgba(7,7,9,.95), rgba(7,7,9,.72) 22%, rgba(7,7,9,.5) 39%, transparent 61%);
-}
-.titulo {
-  position: absolute;
-  z-index: 1;
-  left: 4.6%;
-  right: 5%;
-  bottom: 7%;
-  color: #f6f5f2;
-  font-family: "Barlow Condensed", Impact, "Arial Narrow", sans-serif;
-  font-style: italic;
-  font-weight: 800;
-  font-size: clamp(4.5rem, 27vw, 10rem);
-  font-size: clamp(4.5rem, min(27vw, 22svh), 10rem);
-  line-height: .83;
-  letter-spacing: -.027em;
-}
-.titulo__ponto {
-  display: inline-block;
-  width: .102em;
-  height: .102em;
-  margin-left: .045em;
-  background: var(--lilas);
-  transform: skewX(-12deg);
 }
 
 .perfil { margin-top: 1.4rem; min-width: 0; }
@@ -179,11 +145,10 @@ h1, h2, p { margin: 0; }
 }
 .categoria::before { content: ""; width: 1.45rem; height: 2px; background: var(--lilas); }
 .saudacao {
-  margin: .35rem 0 .35rem;
-  font: 400 clamp(2.65rem, 11vw, 3.8rem)/1 "Instrument Serif", "Times New Roman", serif;
-  letter-spacing: -.035em;
+  margin: .45rem 0 .55rem;
+  font: 400 clamp(2.65rem, 10vw, 3.65rem)/1.04 Barlow, system-ui, sans-serif;
+  letter-spacing: -.05em;
 }
-.saudacao em { font-weight: 400; }
 .bio { max-width: 36ch; color: var(--texto-secundario); font-size: 1.0625rem; line-height: 1.45; }
 
 .plataformas { margin-top: 1.25rem; scroll-margin-block: 1rem; }
@@ -309,12 +274,10 @@ dialog label { display: block; font-size: .9375rem; margin-bottom: .45rem; color
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2.8rem), calc(100% - 2.8rem) 100%, 0 100%);
   }
   .capa__arte img { object-position: 50% 32%; }
-  .capa__corte { clip-path: polygon(95% 0, 97% 0, 79% 100%, 77% 100%); }
-  .titulo { font-size: clamp(7rem, 15.4vw, 13.75rem); bottom: 6%; }
   .perfil { margin: 0; max-width: 28.5rem; width: 100%; justify-self: center; }
   .categoria { font-size: .8125rem; }
   .categoria::before { width: 2rem; }
-  .saudacao { margin-block: .7rem .9rem; font-size: clamp(3.75rem, 5.8vw, 5.75rem); }
+  .saudacao { margin-block: .7rem .95rem; font-size: clamp(3.5rem, 4.4vw, 4.5rem); }
   .bio { font-size: 1.125rem; line-height: 1.55; }
   .plataformas { margin-top: clamp(1.5rem, 3.5vh, 2.5rem); }
   .plataformas ul { gap: .65rem; }
@@ -327,6 +290,5 @@ dialog label { display: block; font-size: .9375rem; margin-bottom: .45rem; color
 @media (forced-colors: active) {
   .canal, .compartilhar, .fechar, .copiar button { border: 1px solid ButtonText; }
   .canal, .canal__acao, .canal--principal .canal__acao { color: LinkText; }
-  .titulo { background: Canvas; width: fit-content; }
   :focus-visible { outline-color: Highlight; }
 }
